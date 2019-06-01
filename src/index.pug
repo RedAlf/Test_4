@@ -1,0 +1,24 @@
+- var x = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+- var y = [1, 2, 3, 4, 5, 6, 7, 8];
+
+doctype html
+html
+    head
+        meta(charset = 'utf-8')
+        meta(name='viewport', content="initial-scale=1.0, width=device-width")
+        title Test 4
+    body
+        .mainBox
+            .topKeys
+                each val in x
+                    .topKey= val
+            .leftKeys
+                each val in y
+                    .sideKey= val
+            .field
+            .rightKeys
+                each val in y
+                    .sideKey= val
+            .bottomKeys
+                each val in x
+                    .bottomKey= val

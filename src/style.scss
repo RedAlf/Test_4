@@ -1,0 +1,85 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.mainBox {
+    width: 600px;
+    height: 600px;
+    border: 1px solid grey;
+    display: flex;
+    flex-flow: wrap;
+
+    .topKeys {
+        width: 500px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row;
+        padding: 0 50px 0 50px;
+    }
+
+    .leftKeys {
+        display: flex;
+        width: 50px;
+        height: 500px;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .rightKeys {
+        display: flex;
+        width: 50px;
+        height: 500px;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bottomKeys {
+        width: 500px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row;
+        padding: 0 50px 0 50px;
+    }
+
+    .field {
+        width: 496px;
+        height: 496px;
+        border: 1px solid grey;
+        display: flex;
+        flex-flow: wrap;
+
+            .blackCell, .whiteCell {
+                width: 62px;
+                height: 62px;
+            }
+
+            .blackCell {
+                background: black;
+            }
+
+            .whiteCell {
+                background: white;
+            }
+
+            .greenCell {
+                background: green;
+            }
+
+            .blueCell {
+                background: blue;
+            }
+
+            :hover {
+                cursor: pointer;
+            }
+    }
+}
